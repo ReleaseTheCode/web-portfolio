@@ -1,0 +1,50 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCES = [
+  {
+    first: true,
+    date: 'Julio 2022  - Diciembre 2024',
+    title: 'SSR FrontEnd Developer - Inchcape Chile',
+    bulletDescription: [
+        'Realizar la migración del 2do sitio más grande de compra y venta de vehículos desde React a NextJs debido a la falta de SEO.',
+        'Lideré el desarrollo de un software de gestión e inventario de automóviles, abarcando todo el proceso desde su ingreso al país hasta la entrega final al cliente.',
+        'Identifiqué brechas en conocimientos técnicos dentro del equipo e implementé un plan de mentorías centrado en mejores prácticas y estandarización, mejorando la eficiencia en la entrega de software.',
+        'Desarrollé un sistema de login corporativo reutilizable para múltiples aplicaciones, utilizando autenticación basada en JWT.'
+    ]
+  },
+  {
+    date: 'Octubre 2020 - Julio 2022',
+    title: 'Desarrollador FullStack - Readiness IT',
+    bulletDescription: [
+        'Desarrollé el flujo de compras para la contratación de televisión por cable y adicionales un mes antes del deadline, entregando una ventaja de ventas sobre la competencia que aún no lanzaba el mismo producto.'
+    ]
+  },
+  {
+    date: 'Octubre 2018 - Julio 2020',
+    title: 'Desarrollador FrontEnd - Realmedia',
+    bulletDescription: [
+        'Crear desde cero todos los nuevos sitios web de la cadena de malls más grande de Chile, además de los tótems de ayuda presente en cada centro comercial.'
+    ]
+  },
+  {
+    date: 'Febrero 2016 - Octubre 2018',
+    title: 'Desarrollador FullStack - Microdat',
+    bulletDescription: [
+        'FullStack banca digital bbva.cl (Mejor Banca digital 3 años consecutivos). Investigación, integración & desarrollo antivirus servicio cloud BBVA. Front End sitio BBVA Netcash.'
+    ]
+  }
+]
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+    {
+        EXPERIENCES.map(exp =>(
+            <li class="mb-10 ms-6">
+                <ExperienceItem {...exp} />
+            </li>
+        ))
+    }
+</ol>
+

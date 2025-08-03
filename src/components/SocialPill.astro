@@ -1,0 +1,15 @@
+<a
+  {...Astro.props}
+  target="_blank"
+  rel="noopener noreferrer"
+  role="link"
+  class={`
+    animate-border rounded-lg
+    bg-white from-blue-500 via-fuchsia-500 
+    to-teal-500 bg-[length:_400%_400%] p-0.5 antialiased [animation-duration:_4s] bg-gradient-to-r
+  `}
+>
+  <span class="inline-flex items-center justify-center gap-2 rounded-md bg-neutral-900 p-2 text-white font-semibold">
+    <slot />
+  </span>
+</a>
