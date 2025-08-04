@@ -1,4 +1,6 @@
-
+---
+import GitHubIcon from "./icons/GitHub.astro";
+---
 
 <footer class="bg-black shadow-sm m-4 dark:bg-black-800 w-full mx-auto">
     <ul class="flex justify-around items-center p-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0 ">
@@ -6,7 +8,15 @@
             <span>Gracias por el interés 🫰🏻</span>
         </li>
         <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Source Code &lt;/&gt;</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              role="link"
+              href="https://github.com/ReleaseTheCode/web-portfolio"
+              class="hover:underline me-4 md:me-6 inline-flex items-center justify-center gap-2"
+            >
+              Source Code <GitHubIcon class="size-6" />
+            </a>
         </li>
     </ul>
     </div>
